@@ -24,6 +24,7 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PrincipalActivity.this,ConsultasActivity.class));
+                overridePendingTransition(R.anim.animacao_horizontal_in, R.anim.animacao_horizontal_out);
             }
         });
 
@@ -33,6 +34,8 @@ public class PrincipalActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(PrincipalActivity.this, CadastroActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.animacao_vertical_in, R.anim.animacao_vertical_out);
+
             }
         });
 
@@ -42,6 +45,8 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(PrincipalActivity.this, LoginActivity.class));
+                overridePendingTransition(R.anim.animacao_vertical_in, R.anim.animacao_vertical_out);
+
             }
         });
     }

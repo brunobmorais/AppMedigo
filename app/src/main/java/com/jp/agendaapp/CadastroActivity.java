@@ -49,6 +49,8 @@ public class CadastroActivity extends AppCompatActivity {
                             if(!campoVazio(txvSenha)) {
                                 Toast.makeText(CadastroActivity.this, "Sucesso", Toast.LENGTH_SHORT).show();
                                 finish();
+                                overridePendingTransition(R.anim.animacao_vertical2_in, R.anim.animacao_vertical2_out);
+
                             }
 
             }
@@ -59,6 +61,8 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                overridePendingTransition(R.anim.animacao_vertical2_in, R.anim.animacao_vertical2_out);
+
             }
         });
 

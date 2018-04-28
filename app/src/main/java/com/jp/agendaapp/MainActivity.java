@@ -3,6 +3,7 @@ package com.jp.agendaapp;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
             startActivity(intent);
             finish();
+            overridePendingTransition(R.anim.animacao_vertical_in, R.anim.animacao_vertical_out);
+
         }
 
         //FullScreen
@@ -89,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
                     startActivity(intent);
                     finish();
+                    overridePendingTransition(R.anim.animacao_vertical_in, R.anim.animacao_vertical_out);
+
                 }
             }
         });

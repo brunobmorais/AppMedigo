@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_check" />
-                            <entry key="sourceFile" value="E:\BM\Área de Trabalho\149086-essential-set\149086-essential-set\svg\settings-4.svg" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic_smartphone" />
+                            <entry key="sourceFile" value="E:\BM\Área de Trabalho\149086-essential-set\149086-essential-set\svg\smartphone-8.svg" />
                           </map>
                         </option>
                       </PersistentState>

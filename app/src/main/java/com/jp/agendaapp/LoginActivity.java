@@ -44,6 +44,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Finaliza Activity
                 finish();
+                overridePendingTransition(R.anim.animacao_vertical2_in, R.anim.animacao_vertical2_out);
+
             }
         });
 
@@ -58,6 +60,8 @@ public class LoginActivity extends AppCompatActivity {
                         startActivity(new Intent(LoginActivity.this,ConsultasActivity.class));
                 //Finaliza Activity
                 finish();
+                overridePendingTransition(R.anim.animacao_vertical_in, R.anim.animacao_vertical_out);
+
             }
         });
     }
