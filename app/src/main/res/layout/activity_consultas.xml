@@ -28,7 +28,7 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
+        android:background="@color/branco"
         app:menu="@menu/navigation"
         app:layout_behavior="@string/bottom_sheet_behavior"/>
 
