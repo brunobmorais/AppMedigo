@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jp.agendaapp">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,15 +24,10 @@
         <activity
             android:name=".PrincipalActivity"
             android:screenOrientation="portrait" />
-<<<<<<< 810eb29a2e0e3a5829219c268e4e5f4532351b5e
         <activity android:name=".CadastroActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".ConsultasActivity"
-            android:screenOrientation="portrait"></activity>
-=======
-        <activity android:name=".CadastroActivity" />
-        <activity android:name=".LoginActivity"></activity>
->>>>>>> Alteracoes cadastro e login
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"/>
     </application>
-
 </manifest>
