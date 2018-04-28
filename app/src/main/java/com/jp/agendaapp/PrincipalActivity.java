@@ -24,6 +24,8 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                startActivity(new Intent(PrincipalActivity.this,ConsultasActivity.class));
+
             }
         });
 

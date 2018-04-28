@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2ebfbf</color>
+    <color name="colorPrimary">#1565C0</color>
     <color name="colorPrimaryDark">#1565C0</color>
     <color name="colorAccent">#ffffff</color>
 
     <color name="dot_active">#FFFFFF</color>
     <color name="dot_inactive">#CCCCCC</color>
     <color name="white">#ffffff</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="preto">#000000</color>
+    <color name="cinza_claro">#CCCCCC</color>
+    <color name="cinza_escuro">#484848</color>
+    <color name="cinza">#757575</color>
+    <color name="fundo">#E9EBEE</color>
 </resources>

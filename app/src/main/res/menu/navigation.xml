@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_todas"
+        android:icon="@drawable/ic_lista_consulta"
+        android:title="Consultas"
+        />
+
+    <item
+        android:id="@+id/navigation_meu_local"
+        android:icon="@drawable/ic_notificacao"
+        android:title="Notificações" />
+
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/ic_config"
+        android:title="Config" />
+
+</menu>
