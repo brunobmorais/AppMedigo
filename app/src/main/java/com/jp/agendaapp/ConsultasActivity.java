@@ -29,7 +29,7 @@ public class ConsultasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultas);
 
-        viewPager = (ViewPager) findViewById(R.id.pager);
+        viewPager = findViewById(R.id.pager);
         ArrayList<Fragment> fr_list = new ArrayList<Fragment>();
         fr_list.add(new PageConsultas());
         fr_list.add(new PageNotificacoes());
@@ -38,7 +38,7 @@ public class ConsultasActivity extends AppCompatActivity {
         pageAdapter = new PageAdapter(getSupportFragmentManager(), fr_list);
 
         //BUTTON NAVIGATION
-        navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         viewPager.setAdapter(pageAdapter);
