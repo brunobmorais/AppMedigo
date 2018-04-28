@@ -42,6 +42,20 @@
         android:theme="@style/TextViewTheme" />
 
     <ImageView
+        android:id="@+id/imgMedico"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:src="@mipmap/medico2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Dr. Fulano de Tal"
+        android:textColor="@color/cinza"
+        android:textSize="20sp"
+        android:theme="@style/TextViewTheme" />
 </RelativeLayout>
