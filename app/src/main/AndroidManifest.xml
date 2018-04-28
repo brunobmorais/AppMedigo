@@ -32,7 +32,8 @@
             android:name=".ConsultasActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".ConfirmaConsultaActivity"></activity>
+        <activity android:name=".ConfirmaConsultaActivity" />
+        <activity android:name=".CadastrarConsultaActivity"></activity>
     </application>
 
 </manifest>
