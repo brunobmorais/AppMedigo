@@ -43,7 +43,7 @@ public class PrincipalActivity extends AppCompatActivity {
         txvEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PrincipalActivity.this, "Entrar com login e senha", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(PrincipalActivity.this, LoginActivity.class));
             }
         });
     }

@@ -2,18 +2,24 @@ package com.jp.agendaapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CadastroActivity extends AppCompatActivity {
     //Componentes
-    private AutoCompleteTextView txvNome, txvEmail, txvSenha;
+    private AutoCompleteTextView txvNome, txvEmail, txvCidade, txvSenha;
+    private ImageView imgBack;
     private Spinner spnGenero;
     private Button btnSalvar;
 
@@ -29,6 +35,7 @@ public class CadastroActivity extends AppCompatActivity {
         //AutoCompleteTextView
         txvNome = findViewById(R.id.txvNome);
         txvEmail = findViewById(R.id.txvEmail);
+        txvCidade = findViewById(R.id.txvCidade);
         txvSenha = findViewById(R.id.txvSenha);
 
         //Button
@@ -36,7 +43,22 @@ public class CadastroActivity extends AppCompatActivity {
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(!campoVazio(txvNome))
+                    if(!campoVazio(txvEmail))
+                        if(!campoVazio(txvCidade))
+                            if(!campoVazio(txvSenha)) {
+                                Toast.makeText(CadastroActivity.this, "Sucesso", Toast.LENGTH_SHORT).show();
+                                finish();
+                            }
 
+            }
+        });
+
+        imgBack = findViewById(R.id.imgBack);
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
@@ -47,5 +69,14 @@ public class CadastroActivity extends AppCompatActivity {
         spnGenero = findViewById(R.id.spnGenero);
         adapter = new ArrayAdapter(this, R.layout.layout_spinner_item, list);
         spnGenero.setAdapter(adapter);
+    }
+
+    private boolean campoVazio(TextView textView) {
+        if(textView.getText().toString().equals("")) {
+            textView.setError("campo vazio");
+            textView.requestFocus();
+            return true;
+        }
+        return false;
     }
 }

@@ -25,10 +25,15 @@
         <activity
             android:name=".PrincipalActivity"
             android:screenOrientation="portrait" />
+<<<<<<< 810eb29a2e0e3a5829219c268e4e5f4532351b5e
         <activity android:name=".CadastroActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".ConsultasActivity"
             android:screenOrientation="portrait"></activity>
+=======
+        <activity android:name=".CadastroActivity" />
+        <activity android:name=".LoginActivity"></activity>
+>>>>>>> Alteracoes cadastro e login
     </application>
 
 </manifest>

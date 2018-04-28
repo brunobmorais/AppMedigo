@@ -2,10 +2,9 @@
     <string name="app_name">AgendaApp</string>
     <string name="facebook_app_id">2009712132689921</string>
 
-    <string name="select">Selecione</string>
+    <string name="select">Genero</string>
 
     <string-array name="genero">
-        <item>Selecione</item>
         <item>Masculino</item>
         <item>Feminino</item>
         <item>Prefiro não dizer</item>

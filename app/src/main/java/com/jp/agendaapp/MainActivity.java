@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         intromanager = new Intromanager(this);
         //Verifica se introducao ja foi concluida
         if(!intromanager.check()) {
-            intromanager.setFirst(true);
+            intromanager.setFirst(false);
             Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
             startActivity(intent);
             finish();
