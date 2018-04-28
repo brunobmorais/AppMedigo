@@ -1,5 +1,6 @@
 package com.jp.agendaapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -53,7 +54,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(!campoVazio(txvEmail))
                     if(!campoVazio(txvSenha))
-                        //Faz algo
+                        //Incializa activity
+                        startActivity(new Intent(LoginActivity.this,ConsultasActivity.class));
                 //Finaliza Activity
                 finish();
             }
